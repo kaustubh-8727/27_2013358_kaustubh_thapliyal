@@ -15,7 +15,7 @@ if(isset($_POST['submit'])){
         echo "form not filled correctly";
     }
     $str = (string)$contact;
-    if(strlen($str)>10 && strlen($str)<10){
+    if(strlen($str)>10 || strlen($str)<10){
         echo "enter valid contact number";
     }
 }
