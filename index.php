@@ -10,15 +10,6 @@ if(isset($_POST['submit'])){
     $gender = $_POST['gender'];
     $email = $_POST['email'];
     $city = $_POST['city'];
-
-    $sql = "INSERT INTO `users` (`username`, `email`, `contact`, `gender`, `city`) VALUES ('$username', '$email','$contact', '$gender', '$city')";
-
-    if(!mysqli_query($conn, $sql)){
-        echo "Error1 ". mysqli_error($conn);
-    }
-    else{
-        echo "Data sent successfully....1";
-    }
 }
 else{
     echo "please enter the details";
